@@ -8,7 +8,7 @@ fi
 if [ "$first" != 1 ];then
     if [ ! -f "bootstrap.zip" ]; then
         echo "downloading bootstrap package"
-        wget https://termux.net/bootstrap/bootstrap-`dpkg --print-architecture`.zip -O bootstrap.zip
+        wget https://github.com/termux/termux-packages/releases/download/bootstrap-2022.11.13-r1%2Bapt-android-7/bootstrap-`dpkg --print-architecture`.zip -O bootstrap.zip
     fi
     cur=`pwd`
     mkdir -p $folder/usr
